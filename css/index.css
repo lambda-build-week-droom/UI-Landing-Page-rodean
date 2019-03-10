@@ -127,6 +127,10 @@ html body {
   font-family: 'Ubuntu', sans-serif;
   box-sizing: border-box;
 }
+.page-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 .top-nav-container {
   display: flex;
   justify-content: space-between;
@@ -142,13 +146,42 @@ html body {
 .top-nav-container .nav-bar {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 45%;
 }
 .top-nav-container .nav-bar li a {
   font-size: 1.2rem;
   text-decoration: none;
   color: #C7D7E0;
 }
-h1 {
-  color: red;
+.top-nav-container .nav-bar li a:hover {
+  color: #FFFFFF;
+}
+.top-nav-container .login {
+  padding: 0.5rem 1rem;
+  background: #1B3B6F;
+  border: 0.08rem solid #C7D7E0;
+  color: #FFFFFF;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.top-nav-container .login:hover {
+  background: #3A7CA5;
+}
+.page-container .header-container {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  background: #3A7CA5;
+}
+.page-container header {
+  display: flex;
+  justify-content: center;
+}
+.page-container header .header-img-container {
+  max-height: 30rem;
+  overflow: hidden;
+}
+.page-container header .header-img-container img {
+  opacity: 0.3;
 }
