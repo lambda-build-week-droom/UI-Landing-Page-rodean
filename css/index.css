@@ -128,8 +128,11 @@ html body {
   box-sizing: border-box;
 }
 .page-container {
-  max-width: 1024px;
   margin: 0 auto;
+}
+.page-container h1 {
+  font-size: 4.2rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 .top-nav-container {
   display: flex;
@@ -137,6 +140,9 @@ html body {
   align-items: center;
   padding: 1rem;
   background-color: #1B3B6F;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .top-nav-container h2 {
   font-family: 'Yellowtail', cursive;
@@ -168,20 +174,50 @@ html body {
 .top-nav-container .login:hover {
   background: #3A7CA5;
 }
-.page-container .header-container {
-  width: 100%;
-  height: 90%;
-  position: absolute;
-  background: #3A7CA5;
-}
 .page-container header {
-  display: flex;
-  justify-content: center;
-}
-.page-container header .header-img-container {
-  max-height: 30rem;
+  height: 35rem;
+  width: 100%;
+  background-image: url(/img/starry\ night\ sky.png);
   overflow: hidden;
 }
-.page-container header .header-img-container img {
-  opacity: 0.3;
+.page-container header .header-container {
+  height: 40rem;
+}
+.page-container header .header-container .cta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.page-container header .header-container .cta h1 {
+  color: #D9DCD6;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 0.2rem;
+  opacity: 1;
+}
+.page-container header .header-container .cta h2 {
+  font-size: 1.4rem;
+  color: #D9DCD6;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 0.2rem;
+}
+.page-container header .header-container .cta .sign-up {
+  background: #3A7CA5;
+  margin-top: 7rem;
+  width: 10rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: #1B3B6F;
+}
+.page-container header .header-container .cta .sign-up a {
+  text-decoration: none;
+  color: #D9DCD6;
+  display: flex;
+  justify-content: center;
 }
