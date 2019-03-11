@@ -122,23 +122,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html body {
+html {
   font-size: 62.5%;
-  font-family: 'Ubuntu', sans-serif;
   box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
 }
 .page-container {
   margin: 0 auto;
 }
-.page-container h1 {
-  font-size: 4.2rem;
-  font-family: 'Ubuntu', sans-serif;
+h1 {
+  font-size: 6.4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 2rem 0rem;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
 }
 .top-nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.2rem 3rem;
   background-color: #1B3B6F;
   position: sticky;
   top: 0;
@@ -146,7 +156,7 @@ html body {
 }
 .top-nav-container h2 {
   font-family: 'Yellowtail', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #FFFFFF;
 }
 .top-nav-container .nav-bar {
@@ -155,7 +165,7 @@ html body {
   width: 45%;
 }
 .top-nav-container .nav-bar li a {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #C7D7E0;
 }
@@ -163,25 +173,25 @@ html body {
   color: #FFFFFF;
 }
 .top-nav-container .login {
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   background: #1B3B6F;
   border: 0.08rem solid #C7D7E0;
   color: #FFFFFF;
   border-radius: 0.3rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 .top-nav-container .login:hover {
   background: #3A7CA5;
 }
 .page-container header {
-  height: 35rem;
+  height: 60rem;
   width: 100%;
   background-image: url(/img/starry\ night\ sky.png);
   overflow: hidden;
 }
 .page-container header .header-container {
-  height: 40rem;
+  height: 60rem;
 }
 .page-container header .header-container .cta {
   display: flex;
@@ -208,16 +218,32 @@ html body {
 }
 .page-container header .header-container .cta .sign-up {
   background: #3A7CA5;
+  border: 0.05rem solid #D9DCD6;
   margin-top: 7rem;
-  width: 10rem;
+  width: 14rem;
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
   color: #1B3B6F;
 }
 .page-container header .header-container .cta .sign-up a {
   text-decoration: none;
-  color: #D9DCD6;
+  color: #FFFFFF;
   display: flex;
   justify-content: center;
+}
+.page-container header .header-container .cta .sign-up:hover {
+  background: #1B3B6F;
+  cursor: pointer;
+}
+.page-container header .header-container .cta .sign-up:hover a {
+  color: #D9DCD6;
+}
+.page-container .section-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.page-container .content-box {
+  width: 30%;
+  background: #D9DCD6;
 }

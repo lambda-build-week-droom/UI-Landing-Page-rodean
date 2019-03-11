@@ -1,12 +1,12 @@
 .page-container{
        header {
-        height: 35rem;
+        height: 60rem;
         width: 100%;
         background-image: url(/img/starry\ night\ sky.png);
         overflow: hidden;        
         
         .header-container{
-            height: 40rem;
+            height: 60rem;
                     
             .cta {
                 display: flex;
@@ -35,22 +35,41 @@
                 .sign-up{
 
                     background: @lightblue;
+                    border: 0.05rem solid @lightgrey;
                     margin-top: 7rem;
-                    width: 10rem;
+                    width: 14rem;
                     border-radius: 1rem;
-                    font-size: 1.4rem;
+                    font-size: 1.6rem;
                     padding: 1rem;
                     color: @darkblue;
                     a{
                         text-decoration: none;
-                        color: @lightgrey;
+                        color: @white;
                         .flex-center();
                     }
-                }  
+                    &:hover{
+                        background: @darkblue;
+                        cursor: pointer;
+                        a{
+                            color: @lightgrey;
+                        }
+                        
+                    }
+                } 
            
             }
            
         
         }
+    }
+
+    .section-1{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .content-box{
+        width: 30%;
+        background: @lightgrey;
     }   
 }
