@@ -144,7 +144,11 @@ h2 {
 }
 p {
   font-size: 1.8rem;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 2.2rem;
+  padding: 0rem 0rem 2rem 0rem;
 }
 .top-nav-container {
   display: flex;
@@ -255,7 +259,38 @@ header .header-container .cta .sign-up:hover a {
   justify-content: space-between;
 }
 .section-1 .content-box {
-  width: 45%;
-  background: #D9DCD6;
+  width: 100%;
+  background: #FFFFFF;
   padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+.section-1 .content-box p {
+  text-align: center;
+}
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mid-section .section-2 .content-mid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 13px -3px #1b3b6f;
+}
+.mid-section .section-2 .content-mid .img-container {
+  max-width: 30%;
+  height: auto;
+  margin-right: 5%;
+}
+.mid-section .section-2 .content-mid .img-container img {
+  max-width: 100%;
+}
+.mid-section .section-2 .content-mid .text-container {
+  margin-top: 3rem;
+  max-width: 70%;
 }
