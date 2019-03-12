@@ -153,18 +153,94 @@ header {
     .features-tabs{
         margin: 0rem 1rem 2rem 0rem;
 
-        span{
+        .tab-button{
             font-size: 1.8rem;
             padding: 1rem 2rem;
             background: @darkblue;
             color:@lightgrey;
             border-top-left-radius: 25%;
             border-top-right-radius: 25%;
-            &:hover{
-                background: @lightblue;
-                color: @white;
-                cursor: pointer;
+            cursor: pointer;
+
+        }
+        .selected{
+            //z-index: 2;
+            background:@accent2;
+            color: @white;
+            cursor: pointer;
+        }
+    }
+}
+.footer-container{
+    background: @lightgrey;
+    padding: 5rem 0rem 10rem 5rem;
+    display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    .footer-nav-container{
+        .flex-center();
+        h2{
+            font-family: 'Yellowtail', cursive;
+            font-size: 4rem;
+            color: darkgray;
+            
+        }
+        .footer-nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0% 5%;
+    
+            li a{
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: darkgrey;
+                padding-right: 2%;
+                &:hover{
+                    color: black;
+                }
             }
         }
     }
+    .cta-2{
+        display: flex;
+        //flex-direction: column;
+        justify-content: center;
+        //align-content: center;
+        h2{
+            font-size: 5rem;
+            font-weight: bold;
+            color: darkgrey;
+        }
+        .sign-up{
+            background: @lightblue;
+            border: 0.05rem solid @lightgrey;
+            margin-top: 3rem;
+            width: 24rem;
+            border-radius: 1rem;
+            font-size: 2.6rem;
+            padding: 1rem;
+            color: @darkblue;
+            a{
+                text-decoration: none;
+                color: @white;
+                .flex-center();
+            }
+            &:hover{
+                background: @darkblue;
+                cursor: pointer;
+                a{
+                    color: @lightgrey;
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+.hide-content{
+    display:none;
 }
