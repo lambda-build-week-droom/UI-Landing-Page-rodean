@@ -312,3 +312,22 @@ header .header-container .cta .sign-up:hover a {
 .mid-section .section-2 .content-mid .text-container-alt p {
   text-align: right;
 }
+.features-tab-container {
+  display: flex;
+}
+.features-tab-container .features-tabs {
+  margin: 0rem 1rem 2rem 0rem;
+}
+.features-tab-container .features-tabs span {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  background: #1B3B6F;
+  color: #D9DCD6;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+}
+.features-tab-container .features-tabs span:hover {
+  background: #3A7CA5;
+  color: #FFFFFF;
+  cursor: pointer;
+}
