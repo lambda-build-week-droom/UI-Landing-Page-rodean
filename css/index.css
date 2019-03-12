@@ -275,22 +275,59 @@ header .header-container .cta .sign-up:hover a {
 .mid-section .section-2 .content-mid {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   background: #FFFFFF;
   padding: 2rem 3rem;
   margin-bottom: 2rem;
   border-radius: 1.2rem;
-  box-shadow: 0px 0px 13px -3px #1b3b6f;
 }
 .mid-section .section-2 .content-mid .img-container {
-  max-width: 30%;
+  max-width: 20%;
   height: auto;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 .mid-section .section-2 .content-mid .img-container img {
   max-width: 100%;
 }
+.mid-section .section-2 .content-mid .img-container-alt {
+  max-width: 20%;
+  height: auto;
+  margin-left: 3%;
+}
+.mid-section .section-2 .content-mid .img-container-alt img {
+  max-width: 100%;
+}
 .mid-section .section-2 .content-mid .text-container {
   margin-top: 3rem;
+  max-width: 80%;
+}
+.mid-section .section-2 .content-mid .text-container-alt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 3rem;
   max-width: 70%;
+}
+.mid-section .section-2 .content-mid .text-container-alt p {
+  text-align: right;
+}
+.features-tab-container {
+  display: flex;
+}
+.features-tab-container .features-tabs {
+  margin: 0rem 1rem 2rem 0rem;
+}
+.features-tab-container .features-tabs span {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  background: #1B3B6F;
+  color: #D9DCD6;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+}
+.features-tab-container .features-tabs span:hover {
+  background: #3A7CA5;
+  color: #FFFFFF;
+  cursor: pointer;
 }

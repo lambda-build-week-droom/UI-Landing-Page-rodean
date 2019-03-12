@@ -6,11 +6,10 @@ header {
     height: 60rem;
     width: 100%;
     background-image: url(/img/starry\ night\ sky.png);
-    overflow: hidden;        
+    overflow: hidden;         
     
     .header-container{
-        height: 60rem;
-                
+        height: 60rem;        
         .cta {
             display: flex;
             justify-content: center;
@@ -95,11 +94,12 @@ header {
 .mid-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
     .section-2{ 
         .content-mid{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             width: 100%;
             background: @white;
             padding: 2rem 3rem;
@@ -107,11 +107,19 @@ header {
             border-radius: 1.2rem;
             // -webkit-box-shadow: 0px 0px 13px -3px rgba(27,59,111,1);
             // -moz-box-shadow: 0px 0px 13px -3px rgba(27,59,111,1);
-            box-shadow: 0px 0px 13px -3px rgba(27,59,111,1);
+            //box-shadow: 0px 0px 13px -3px rgba(27,59,111,1);
             .img-container{
-                max-width: 30%;
+                max-width: 20%;
                 height: auto;
-                margin-right: 5%;
+                margin-right: 3%;
+                img{
+                    max-width: 100%
+                }
+            }
+            .img-container-alt{
+                max-width: 20%;
+                height: auto;
+                margin-left: 3%;
                 img{
                     max-width: 100%
                 }
@@ -119,10 +127,43 @@ header {
             .text-container{
                 //padding: 5%;
                 margin-top: 3rem;
+                max-width: 80%;
+            }
+            .text-container-alt{
+                //padding: 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-top: 3rem;
                 max-width: 70%;
+                p{
+                    text-align: right;
+                }
             }
                 
         }       
 
+    } 
+       
+}
+.features-tab-container{
+    display: flex;
+    
+    .features-tabs{
+        margin: 0rem 1rem 2rem 0rem;
+
+        span{
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            background: @darkblue;
+            color:@lightgrey;
+            border-top-left-radius: 25%;
+            border-top-right-radius: 25%;
+            &:hover{
+                background: @lightblue;
+                color: @white;
+                cursor: pointer;
+            }
+        }
     }
 }
