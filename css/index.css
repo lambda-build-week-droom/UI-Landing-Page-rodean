@@ -290,7 +290,25 @@ header .header-container .cta .sign-up:hover a {
 .mid-section .section-2 .content-mid .img-container img {
   max-width: 100%;
 }
+.mid-section .section-2 .content-mid .img-container-alt {
+  max-width: 30%;
+  height: auto;
+  margin-left: 5%;
+}
+.mid-section .section-2 .content-mid .img-container-alt img {
+  max-width: 100%;
+}
 .mid-section .section-2 .content-mid .text-container {
   margin-top: 3rem;
   max-width: 70%;
+}
+.mid-section .section-2 .content-mid .text-container-alt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 3rem;
+  max-width: 70%;
+}
+.mid-section .section-2 .content-mid .text-container-alt p {
+  text-align: right;
 }
