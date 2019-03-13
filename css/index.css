@@ -131,7 +131,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .page-container {
   margin: 0 auto;
@@ -198,7 +198,7 @@ h3 {
 header {
   height: 60rem;
   width: 100%;
-  background-image: url(/img/starry\ night\ sky.png);
+  background-image: url(/img/starry\ night\ sky.jpg);
   overflow: hidden;
 }
 header .header-container {
@@ -410,4 +410,35 @@ header .header-container .cta .sign-up:hover a {
 }
 .hide-content {
   display: none;
+}
+.team .main-content {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+.team .main-content h1 {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  height: auto;
+  padding: 5rem 0rem;
+  border-radius: 100%;
+}
+.img-container .holder {
+  width: 20%;
+  height: auto;
+  margin: 0rem 3rem;
+}
+.img-container .holder img {
+  border-radius: 100%;
+}
+.img-container .holder:hover {
+  border: 0.3rem solid #1B3B6F;
 }

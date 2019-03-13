@@ -1,0 +1,36 @@
+.team{
+    .main-content{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5rem;
+        h1{
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+    }
+
+}
+.img-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    height: auto;
+    padding: 5rem 0rem;
+    border-radius: 100%;
+    .holder{
+        
+        width:20%;
+        height: auto;
+        margin: 0rem 3rem;
+        img{
+            border-radius: 100%;
+        }
+        &:hover{
+            border: 0.3rem solid @darkblue;
+        }
+    }
+    
+}
