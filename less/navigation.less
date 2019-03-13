@@ -42,4 +42,65 @@
             
         }
     }
+
+}
+.top-nav-container-mobile{
+    display: none;
+}
+@media(max-width: 750px){
+    .top-nav-container{
+        display:none;
+
+    }
+    .top-nav-container-mobile{
+        display: flex;
+        justify-content: space-between;
+        //align-items: center;
+        //align-content: center;
+        padding: 0rem 3rem;
+        background-color: @darkblue;
+        width: 100%;
+    }
+    .logo{
+        font-family: 'Yellowtail', cursive;
+        font-size: 6rem;
+        color: @white;
+        margin-bottom: 4rem;
+    }
+    .nav-bar-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 20rem;
+        padding: 1rem 0rem;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        li a{
+            font-size: 3.5rem;
+            text-decoration: none;
+            color: @accentblue;
+            &:hover{
+                color: @white;
+            }
+
+        }
+    }
+    .login{
+        padding: 1rem 3.2rem;
+        background: @darkblue;
+        border: 0.08rem solid @accentblue;
+        color: @white;
+        border-radius: 0.3rem;
+        font-size: 3rem;
+        text-decoration: none;
+        &:hover{
+            background: @lightblue;
+            
+        }
+    }
+        
 }
