@@ -16,6 +16,7 @@ header {
             flex-direction: column;
             align-items: center;
             height: 100%;
+            padding: 10%;
 
             h1{
                 color: @lightgrey;
@@ -26,7 +27,7 @@ header {
                 opacity: 1;
             }
             h2{
-                font-size: 1.4rem;
+                font-size: 1.8rem;
                 color: @lightgrey;
                 text-align: center;
                 font-weight: bold;
@@ -64,11 +65,20 @@ header {
     
     }
 }
+#about{
+    width: 100%;
+    height: 0.1rem;
+    margin-bottom: 5rem;
+    background: white;
+}
 
 .top-section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    h2{
+        padding: 6.5rem 0rem;
+    }
 } 
 
 .section-1{
@@ -94,7 +104,10 @@ header {
 .mid-section{
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center; 
+    h2{
+        padding: 6.5rem 0rem;
+    }   
     .section-2{ 
         .content-mid{
             display: flex;
@@ -157,7 +170,7 @@ header {
             font-size: 1.8rem;
             padding: 1rem 2rem;
             background: @darkblue;
-            color:@lightgrey;
+            color:@white;
             border-top-left-radius: 25%;
             border-top-right-radius: 25%;
             cursor: pointer;
@@ -173,16 +186,19 @@ header {
 }
 .footer-container{
     background: @lightgrey;
-    padding: 5rem 0rem 10rem 5rem;
-    display: flex;
+    padding: 3% 0% 0% 5%;
+    //display: flex;
     // flex-direction: column;
     // justify-content: center;
     .footer-nav-container{
-        .flex-center();
+        display: flex;
+        //justify-content: space-between;
+        //width: 100%;
         h2{
             font-family: 'Yellowtail', cursive;
             font-size: 4rem;
-            color: darkgray;
+            color: #404040;
+            //max-width: 20%;
             
         }
         .footer-nav{
@@ -190,13 +206,13 @@ header {
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            padding: 0% 5%;
+            padding: 2% 5%;
     
             li a{
                 text-decoration: none;
                 font-size: 1.6rem;
-                color: darkgrey;
-                padding-right: 2%;
+                color: #404040;
+                //padding-right: 2%;
                 &:hover{
                     color: black;
                 }
@@ -205,9 +221,9 @@ header {
     }
     .cta-2{
         display: flex;
-        //flex-direction: column;
-        justify-content: center;
-        //align-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
         h2{
             font-size: 5rem;
             font-weight: bold;
@@ -239,8 +255,6 @@ header {
     }
 
 }
-
-
 .hide-content{
     display:none;
 }

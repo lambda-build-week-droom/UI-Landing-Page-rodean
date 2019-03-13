@@ -128,6 +128,7 @@ table {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -143,8 +144,8 @@ h2 {
   padding: 2rem 0rem;
 }
 p {
-  font-size: 1.8rem;
-  line-height: 1.5;
+  font-size: 1.9rem;
+  line-height: 1.8;
 }
 h3 {
   font-size: 2.2rem;
@@ -157,6 +158,7 @@ h3 {
   padding: 0rem 3rem;
   background-color: #1B3B6F;
   position: sticky;
+  width: 100%;
   top: 0;
   z-index: 2;
 }
@@ -208,6 +210,7 @@ header .header-container .cta {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  padding: 10%;
 }
 header .header-container .cta h1 {
   color: #D9DCD6;
@@ -218,7 +221,7 @@ header .header-container .cta h1 {
   opacity: 1;
 }
 header .header-container .cta h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #D9DCD6;
   text-align: center;
   font-weight: bold;
@@ -248,10 +251,19 @@ header .header-container .cta .sign-up:hover {
 header .header-container .cta .sign-up:hover a {
   color: #D9DCD6;
 }
+#about {
+  width: 100%;
+  height: 0.1rem;
+  margin-bottom: 5rem;
+  background: white;
+}
 .top-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.top-section h2 {
+  padding: 6.5rem 0rem;
 }
 .section-1 {
   display: flex;
@@ -271,6 +283,9 @@ header .header-container .cta .sign-up:hover a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.mid-section h2 {
+  padding: 6.5rem 0rem;
 }
 .mid-section .section-2 .content-mid {
   display: flex;
@@ -322,7 +337,7 @@ header .header-container .cta .sign-up:hover a {
   font-size: 1.8rem;
   padding: 1rem 2rem;
   background: #1B3B6F;
-  color: #D9DCD6;
+  color: #FFFFFF;
   border-top-left-radius: 25%;
   border-top-right-radius: 25%;
   cursor: pointer;
@@ -334,37 +349,36 @@ header .header-container .cta .sign-up:hover a {
 }
 .footer-container {
   background: #D9DCD6;
-  padding: 5rem 0rem 10rem 5rem;
-  display: flex;
+  padding: 3% 0% 0% 5%;
 }
 .footer-container .footer-nav-container {
   display: flex;
-  justify-content: center;
 }
 .footer-container .footer-nav-container h2 {
   font-family: 'Yellowtail', cursive;
   font-size: 4rem;
-  color: darkgray;
+  color: #404040;
 }
 .footer-container .footer-nav-container .footer-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0% 5%;
+  padding: 2% 5%;
 }
 .footer-container .footer-nav-container .footer-nav li a {
   text-decoration: none;
   font-size: 1.6rem;
-  color: darkgrey;
-  padding-right: 2%;
+  color: #404040;
 }
 .footer-container .footer-nav-container .footer-nav li a:hover {
   color: black;
 }
 .footer-container .cta-2 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
 }
 .footer-container .cta-2 h2 {
   font-size: 5rem;
