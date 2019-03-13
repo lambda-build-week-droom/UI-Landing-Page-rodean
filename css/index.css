@@ -426,19 +426,18 @@ header .header-container .cta .sign-up:hover a {
 .img-container {
   display: flex;
   justify-content: space-between;
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
-  padding: 5rem 0rem;
-  border-radius: 100%;
+  padding: 3rem;
 }
 .img-container .holder {
-  width: 20%;
-  height: auto;
-  margin: 0rem 3rem;
+  max-width: 20%;
 }
 .img-container .holder img {
+  width: 100%;
   border-radius: 100%;
 }
-.img-container .holder:hover {
+.img-container .holder img:hover {
   border: 0.3rem solid #1B3B6F;
+  transition: 0.4s;
 }
