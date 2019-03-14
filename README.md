@@ -2,17 +2,39 @@
 
 - What problem does your app solve?
 
+Droom connects employers and job seekers.
+
 - Be as specific as possible; how does your app solve the problem?
 
+Droom will connect potential employers with job seekers. by
+allowing them both to signal interest before opening the lines
+of communication.
+
 - What is the mission statement?
+
+Your dream job is only one swipe away!
 
 # Features
 
 - What features are required for your minimum viable product?
 
+cta button
+login button
+responsive mobile design
+create marketing copy
+create second webpage
+deploy site
+
 - What features may you wish to put in a future release?
 
+video of app in use
+
 - What do the top 3 similar apps do for their users?
+
+allow users to create job postings
+allow users to send resumes
+allow users to create profiles
+
 
 # Frameworks
 
@@ -40,9 +62,17 @@
 
 - Who is your target audience? Be specific.
 
+Our target audience is job seekers and employers 
+
 - What feedback have you gotten from potential users?
 
+feedback has been that an app to reduce the burnout from
+the job search would be ideal and being able to have an app
+verify mutual interest would be helpful
+
 - Have you validated the problem and your solution with your target audience? How?
+
+no
 
 Research
 
@@ -51,3 +81,10 @@ Research
 # Prototype Key Feature(s)
 
 - This is the &quot;bread and butter&quot; of the app, this is what makes your app yours. Calculate how long it takes to implement these features and triple the time estimated. That way you&#39;ll have plenty of time to finish. It is preferred to drop features and spend more time working on your MVP features if needed.
+
+cta button - day 1
+login button - day 1
+responsive mobile design - day 3
+create marketing copy - day 3
+create second webpage - day 4
+deploy site - day 5
