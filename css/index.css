@@ -183,7 +183,9 @@ h3 {
 .top-nav-container .login {
   padding: 1rem 2rem;
   background: #1B3B6F;
-  border: 0.08rem solid #C7D7E0;
+  -webkit-box-shadow: 0px 0px 13px 0px #0a172b;
+  -moz-box-shadow: 0px 0px 13px 0px #0a172b;
+  box-shadow: 0px 0px 13px 0px #0a172b;
   color: #FFFFFF;
   border-radius: 0.3rem;
   font-size: 1.8rem;
@@ -191,6 +193,89 @@ h3 {
 }
 .top-nav-container .login:hover {
   background: #3A7CA5;
+}
+.top-nav-container-mobile {
+  display: none;
+}
+.nav-bar-mobile {
+  display: none;
+}
+@media (max-width: 750px) {
+  .top-nav-container {
+    display: none;
+  }
+  .menu-button {
+    padding: 1rem 2rem;
+    background: #1B3B6F;
+    -webkit-box-shadow: 0px 0px 13px 0px #0a172b;
+    -moz-box-shadow: 0px 0px 13px 0px #0a172b;
+    box-shadow: 0px 0px 13px 0px #0a172b;
+    color: #FFFFFF;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .menu-button:hover {
+    background: #3A7CA5;
+  }
+  .top-nav-container-mobile {
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0rem 3rem;
+    background-color: #1B3B6F;
+  }
+  .top-nav-container-mobile .mobile-login div {
+    padding-bottom: 3rem;
+  }
+  .top-nav-container-mobile .mobile-menu div {
+    padding-bottom: 3rem;
+  }
+  .logo {
+    font-family: 'Yellowtail', cursive;
+    font-size: 5rem;
+    color: #FFFFFF;
+    margin: 1rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  .nav-bar-mobile {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    height: 100vh;
+    padding: 2rem 0rem;
+    width: 40%;
+    background: #112749;
+    position: fixed;
+    top: 6rem;
+  }
+  .nav-bar-mobile a {
+    font-size: 2rem;
+    color: #D9DCD6;
+    text-decoration: none;
+    padding-left: 3rem;
+  }
+  .nav-bar-mobile div {
+    margin: 2rem 0rem;
+    z-index: 0;
+  }
+  .login {
+    padding: 1rem 3.2rem;
+    background: #1B3B6F;
+    -webkit-box-shadow: 0px 0px 13px 0px #0a172b;
+    -moz-box-shadow: 0px 0px 13px 0px #0a172b;
+    box-shadow: 0px 0px 13px 0px #0a172b;
+    color: #FFFFFF;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .login:hover {
+    background: #3A7CA5;
+  }
 }
 .page-container {
   max-width: 100rem;
@@ -201,10 +286,10 @@ header {
   background-image: url(/img/starry\ night\ sky.jpg);
   overflow: hidden;
 }
-header .header-container {
+.header-container {
   height: 60rem;
 }
-header .header-container .cta {
+.header-container .cta {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -212,7 +297,8 @@ header .header-container .cta {
   height: 100%;
   padding: 10%;
 }
-header .header-container .cta h1 {
+
+.header-container .cta h1 {
   color: #D9DCD6;
   text-align: center;
   font-weight: bold;
@@ -220,7 +306,7 @@ header .header-container .cta h1 {
   letter-spacing: 0.2rem;
   opacity: 1;
 }
-header .header-container .cta h2 {
+.header-container .cta h2 {
   font-size: 1.8rem;
   color: #D9DCD6;
   text-align: center;
@@ -228,9 +314,8 @@ header .header-container .cta h2 {
   line-height: 1.6;
   letter-spacing: 0.2rem;
 }
-header .header-container .cta .sign-up {
+.header-container .cta .sign-up {
   background: #3A7CA5;
-  border: 0.05rem solid #D9DCD6;
   margin-top: 10rem;
   width: 24rem;
   border-radius: 1rem;
@@ -238,24 +323,18 @@ header .header-container .cta .sign-up {
   padding: 1rem;
   color: #1B3B6F;
 }
-header .header-container .cta .sign-up a {
+.header-container .cta .sign-up a {
   text-decoration: none;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
 }
-header .header-container .cta .sign-up:hover {
+.header-container .cta .sign-up:hover {
   background: #1B3B6F;
   cursor: pointer;
 }
-header .header-container .cta .sign-up:hover a {
+.header-container .cta .sign-up:hover a {
   color: #D9DCD6;
-}
-#about {
-  width: 100%;
-  height: 0.1rem;
-  margin-bottom: 5rem;
-  background: white;
 }
 .top-section {
   display: flex;
@@ -263,7 +342,7 @@ header .header-container .cta .sign-up:hover a {
   align-items: center;
 }
 .top-section h2 {
-  padding: 6.5rem 0rem;
+  padding: 3em 0rem;
 }
 .section-1 {
   display: flex;
@@ -276,12 +355,14 @@ header .header-container .cta .sign-up:hover a {
   padding: 1rem 3rem;
   margin-bottom: 2rem;
 }
-.section-1 .content-box p {
+.section-1 .content-box h3 {
+  padding: 5rem 0rem;
+}
+.easy {
   text-align: center;
 }
 .mid-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .mid-section h2 {
@@ -289,7 +370,7 @@ header .header-container .cta .sign-up:hover a {
 }
 .mid-section .section-2 .content-mid {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   background: #FFFFFF;
@@ -298,7 +379,7 @@ header .header-container .cta .sign-up:hover a {
   border-radius: 1.2rem;
 }
 .mid-section .section-2 .content-mid .img-container {
-  max-width: 20%;
+  max-width: 100%;
   height: auto;
   margin-right: 3%;
 }
@@ -306,7 +387,6 @@ header .header-container .cta .sign-up:hover a {
   max-width: 100%;
 }
 .mid-section .section-2 .content-mid .img-container-alt {
-  max-width: 20%;
   height: auto;
   margin-left: 3%;
 }
@@ -315,26 +395,34 @@ header .header-container .cta .sign-up:hover a {
 }
 .mid-section .section-2 .content-mid .text-container {
   margin-top: 3rem;
-  max-width: 80%;
+  max-width: 100%;
 }
 .mid-section .section-2 .content-mid .text-container-alt {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: 3rem;
-  max-width: 70%;
+  max-width: 80%;
 }
 .mid-section .section-2 .content-mid .text-container-alt p {
   text-align: right;
 }
+.bottom-section h2 {
+  padding: 5rem 0rem;
+}
+.features-content-container {
+  margin: 4% 2%;
+}
 .features-tab-container {
   display: flex;
+  margin: 4% 2%;
 }
 .features-tab-container .features-tabs {
-  margin: 0rem 1rem 2rem 0rem;
+  margin: 0% 1% 2% 0%;
 }
 .features-tab-container .features-tabs .tab-button {
   font-size: 1.8rem;
+  white-space: nowrap;
   padding: 1rem 2rem;
   background: #1B3B6F;
   color: #FFFFFF;
@@ -349,7 +437,6 @@ header .header-container .cta .sign-up:hover a {
 }
 .footer-container {
   background: #D9DCD6;
-  padding: 3% 0% 0% 5%;
 }
 .footer-container .footer-nav-container {
   display: flex;
@@ -374,20 +461,19 @@ header .header-container .cta .sign-up:hover a {
 .footer-container .footer-nav-container .footer-nav li a:hover {
   color: black;
 }
-.footer-container .cta-2 {
+.cta-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 5rem;
 }
-.footer-container .cta-2 h2 {
+.cta-2 h2 {
   font-size: 5rem;
   font-weight: bold;
   color: darkgrey;
 }
-.footer-container .cta-2 .sign-up {
+.cta-2 .sign-up {
   background: #3A7CA5;
-  border: 0.05rem solid #D9DCD6;
   margin-top: 3rem;
   width: 24rem;
   border-radius: 1rem;
@@ -395,24 +481,72 @@ header .header-container .cta .sign-up:hover a {
   padding: 1rem;
   color: #1B3B6F;
 }
-.footer-container .cta-2 .sign-up a {
+.cta-2 .sign-up a {
   text-decoration: none;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
 }
-.footer-container .cta-2 .sign-up:hover {
+.cta-2 .sign-up:hover {
   background: #1B3B6F;
   cursor: pointer;
 }
-.footer-container .cta-2 .sign-up:hover a {
+.cta-2 .sign-up:hover a {
   color: #D9DCD6;
 }
 .hide-content {
   display: none;
 }
+@media (max-width: 800px) {
+  .mid-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-2 h2 {
+    font-size: 4rem;
+  }
+  .bottom-section h2 {
+    margin: 0% 2%;
+  }
+  .features-content-container {
+    margin: 4% 2%;
+  }
+}
+@media (max-width: 500px) {
+  .content-mid {
+    flex-direction: column;
+  }
+  .content-mid .img-container {
+    height: auto;
+    margin-right: 3%;
+  }
+  .content-mid .img-container img {
+    max-width: 100%;
+  }
+  .content-mid .img-container-alt {
+    order: -1;
+    height: auto;
+    margin-left: 3%;
+  }
+  .content-mid .img-container-alt img {
+    max-width: 100%;
+  }
+  .content-mid .text-container {
+    margin-top: 3rem;
+    max-width: 80%;
+  }
+  .content-mid .text-container-alt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3rem;
+    max-width: 70%;
+  }
+  .content-mid .text-container-alt p {
+    text-align: right;
+  }
+}
 .team .main-content {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -423,21 +557,43 @@ header .header-container .cta .sign-up:hover a {
   text-align: center;
   padding-bottom: 5rem;
 }
-.img-container {
+.profile-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 100%;
   height: auto;
   padding: 3rem;
 }
-.img-container .holder {
-  max-width: 20%;
+.profile-container .members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
 }
-.img-container .holder img {
+.profile-container .members .team-text-container {
+  max-width: 80%;
+  padding-left: 3rem;
+}
+.profile-container .members .img-holder {
+  max-width: 40%;
+}
+.profile-container .members .img-holder img {
   width: 100%;
   border-radius: 100%;
 }
-.img-container .holder img:hover {
-  border: 0.3rem solid #1B3B6F;
-  transition: 0.4s;
+@media (max-width: 750px) {
+  .profile-container .members {
+    flex-direction: column;
+  }
+  .profile-container .members .team-text-container {
+    max-width: 100%;
+  }
+  .profile-container .members .team-text-container h2 {
+    text-align: center;
+  }
+  .profile-container .members .team-text-container p {
+    text-align: center;
+  }
 }
