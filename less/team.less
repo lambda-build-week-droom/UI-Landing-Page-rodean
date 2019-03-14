@@ -16,16 +16,13 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 100%;
-    margin: 0% 5%;
     height: auto;
     padding: 3rem;
-    //border-radius: 100%;
     .members{ 
         display: flex;
         justify-content: space-between;
         align-items: center;      
         width:100%;
-        //height: auto;
         margin-bottom: 5rem;
         .team-text-container{
             max-width: 80%;
@@ -37,12 +34,22 @@
                 width: 100%;
                 border-radius: 100%;
             }
-            &:hover{
-                border: 0.3rem solid @darkblue;
-                transition: 0.4s;
-            }
         }
 
+    }
+    @media(max-width: 750px){
+        .members{
+            flex-direction: column;
+            .team-text-container{
+                max-width: 100%;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
     }
     
 }

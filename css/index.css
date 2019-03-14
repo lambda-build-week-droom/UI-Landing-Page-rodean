@@ -183,7 +183,9 @@ h3 {
 .top-nav-container .login {
   padding: 1rem 2rem;
   background: #1B3B6F;
-  border: 0.08rem solid #C7D7E0;
+  -webkit-box-shadow: 0px 0px 13px 0px #0a172b;
+  -moz-box-shadow: 0px 0px 13px 0px #0a172b;
+  box-shadow: 0px 0px 13px 0px #0a172b;
   color: #FFFFFF;
   border-radius: 0.3rem;
   font-size: 1.8rem;
@@ -195,51 +197,80 @@ h3 {
 .top-nav-container-mobile {
   display: none;
 }
+.nav-bar-mobile {
+  display: none;
+}
 @media (max-width: 750px) {
   .top-nav-container {
     display: none;
   }
+  .menu-button {
+    padding: 1rem 2rem;
+    background: #1B3B6F;
+    -webkit-box-shadow: 0px 0px 13px 0px #0a172b;
+    -moz-box-shadow: 0px 0px 13px 0px #0a172b;
+    box-shadow: 0px 0px 13px 0px #0a172b;
+    color: #FFFFFF;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .menu-button:hover {
+    background: #3A7CA5;
+  }
   .top-nav-container-mobile {
+    position: sticky;
+    top: 0;
     display: flex;
+    z-index: 3;
     justify-content: space-between;
+    align-items: flex-end;
     padding: 0rem 3rem;
     background-color: #1B3B6F;
-    width: 100%;
+  }
+  .top-nav-container-mobile .mobile-login div {
+    padding-bottom: 3rem;
+  }
+  .top-nav-container-mobile .mobile-menu div {
+    padding-bottom: 3rem;
   }
   .logo {
     font-family: 'Yellowtail', cursive;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #FFFFFF;
-    margin-bottom: 4rem;
+    margin: 1rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
   .nav-bar-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    height: 20rem;
-    padding: 1rem 0rem;
+    align-content: flex-end;
+    height: 100vh;
+    padding: 2rem 0rem;
+    width: 40%;
+    background: #112749;
+    position: fixed;
+    top: 6rem;
   }
-  .nav-bar-mobile ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .nav-bar-mobile li a {
-    font-size: 3.5rem;
+  .nav-bar-mobile a {
+    font-size: 2rem;
+    color: #D9DCD6;
     text-decoration: none;
-    color: #C7D7E0;
+    padding-left: 3rem;
   }
-  .nav-bar-mobile li a:hover {
-    color: #FFFFFF;
+  .nav-bar-mobile div {
+    margin: 2rem 0rem;
+    z-index: 0;
   }
   .login {
     padding: 1rem 3.2rem;
     background: #1B3B6F;
-    border: 0.08rem solid #C7D7E0;
+    -webkit-box-shadow: 0px 0px 13px 0px #0a172b;
+    -moz-box-shadow: 0px 0px 13px 0px #0a172b;
+    box-shadow: 0px 0px 13px 0px #0a172b;
     color: #FFFFFF;
     border-radius: 0.3rem;
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration: none;
   }
   .login:hover {
@@ -284,7 +315,6 @@ header {
 }
 .header-container .cta .sign-up {
   background: #3A7CA5;
-  border: 0.05rem solid #D9DCD6;
   margin-top: 10rem;
   width: 24rem;
   border-radius: 1rem;
@@ -305,19 +335,13 @@ header {
 .header-container .cta .sign-up:hover a {
   color: #D9DCD6;
 }
-#about {
-  width: 100%;
-  height: 0.1rem;
-  margin-bottom: 5rem;
-  background: white;
-}
 .top-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .top-section h2 {
-  padding: 6.5rem 0rem;
+  padding: 3em 0rem;
 }
 .section-1 {
   display: flex;
@@ -382,18 +406,22 @@ header {
 .mid-section .section-2 .content-mid .text-container-alt p {
   text-align: right;
 }
-.bottom-section {
-  margin: 10rem 0rem;
-  padding: 0rem 5rem;
+.bottom-section h2 {
+  padding: 5rem 0rem;
+}
+.features-content-container {
+  margin: 4% 2%;
 }
 .features-tab-container {
   display: flex;
+  margin: 4% 2%;
 }
 .features-tab-container .features-tabs {
   margin: 0% 1% 2% 0%;
 }
 .features-tab-container .features-tabs .tab-button {
   font-size: 1.8rem;
+  white-space: nowrap;
   padding: 1rem 2rem;
   background: #1B3B6F;
   color: #FFFFFF;
@@ -445,7 +473,6 @@ header {
 }
 .cta-2 .sign-up {
   background: #3A7CA5;
-  border: 0.05rem solid #D9DCD6;
   margin-top: 3rem;
   width: 24rem;
   border-radius: 1rem;
@@ -476,6 +503,12 @@ header {
   }
   .cta-2 h2 {
     font-size: 4rem;
+  }
+  .bottom-section h2 {
+    margin: 0% 2%;
+  }
+  .features-content-container {
+    margin: 4% 2%;
   }
 }
 @media (max-width: 500px) {
@@ -528,7 +561,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   max-width: 100%;
-  margin: 0% 5%;
   height: auto;
   padding: 3rem;
 }
@@ -550,7 +582,17 @@ header {
   width: 100%;
   border-radius: 100%;
 }
-.profile-container .members .img-holder:hover {
-  border: 0.3rem solid #1B3B6F;
-  transition: 0.4s;
+@media (max-width: 750px) {
+  .profile-container .members {
+    flex-direction: column;
+  }
+  .profile-container .members .team-text-container {
+    max-width: 100%;
+  }
+  .profile-container .members .team-text-container h2 {
+    text-align: center;
+  }
+  .profile-container .members .team-text-container p {
+    text-align: center;
+  }
 }

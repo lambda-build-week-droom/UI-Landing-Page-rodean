@@ -45,3 +45,16 @@ const tabs = document.querySelectorAll(".tab-button");
 tabs.forEach(function(tabInfo){
     return new Tab(tabInfo);
 })
+
+const menu = document.querySelector(".nav-bar-mobile");
+const menuButton = document.querySelector(".menu-button")
+menuButton.addEventListener("click", function(){
+    return menu.classList.toggle("hide-content");
+});
+
+const links = document.querySelectorAll(".nav-bar-mobile div");
+links.forEach(function(link){
+    link.addEventListener("click", function(){
+        menu.classList.toggle("hide-content")
+    });
+});
