@@ -27,7 +27,7 @@ If it’s not working, try restarting your computer and attempting the .msi inst
 Open git bash and `run yarn global add less`
 If it’s not working, restart git bash and try again
 
-## Step 5: Install less-watch-compiler
+## Step 5: Install LESS (less-watch-compiler)
  
 Open git bash and run ``yarn global add less-watch-compiler``
 
