@@ -42,4 +42,4 @@ window.addEventListener("click",function(event){
     if(event.target !== menuButton){
         menu.classList.add("hide-content");
     }
-}); 
+});
