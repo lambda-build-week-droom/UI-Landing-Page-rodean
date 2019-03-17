@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e56dff83-e568-4a41-9485-3c5219c039e4/deploy-status)](https://app.netlify.com/sites/droom1/deploys)
 ## Site Deployment Link: [Droom UI](https://droom-ui.netlify.com/)
 
 The Droom UI was created using HTML LESS CSS and Javascript
@@ -88,4 +89,3 @@ This is the "bread and butter" of the app, this is what makes your app yours. Ca
 ##### Create Marketing Copy - Day 3 
 ##### Create Second Webpage - Day 4 
 ##### Deploy Site - Day 5
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e56dff83-e568-4a41-9485-3c5219c039e4/deploy-status)](https://app.netlify.com/sites/droom1/deploys)
