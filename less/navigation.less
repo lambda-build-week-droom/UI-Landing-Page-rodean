@@ -1,173 +1,171 @@
-.top-nav-container{
+.top-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3rem;
+  background-color: @darkblue;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+
+  h2 {
+    font-family: "Yellowtail", cursive;
+    font-size: 4rem;
+    color: @white;
+  }
+  .nav-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 45%;
+
+    li a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: @accentblue;
+      &:hover {
+        color: @white;
+      }
+    }
+  }
+  .login {
+    padding: 1rem 2rem;
+    background: @darkblue;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    color: @white;
+    border-radius: 0.3rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    &:hover {
+      background: @lightblue;
+    }
+  }
+}
+.top-nav-container-mobile {
+  display: none;
+}
+.nav-bar-mobile {
+  display: none;
+}
+@media (max-width: 750px) {
+  .top-nav-container {
+    display: none;
+  }
+  .mobile-menu div a {
+    color: white;
+  }
+  .menu-button {
+    padding: 1rem 2rem;
+    background: @darkblue;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    color: @white;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    &:hover {
+      background: @lightblue;
+      cursor: pointer;
+    }
+  }
+  .top-nav-container-mobile {
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 0rem 3rem;
     background-color: @darkblue;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 2;
-
-    h2{
-        font-family: 'Yellowtail', cursive;
-        font-size: 4rem;
-        color: @white;
+    .mobile-login {
+      div {
+        padding-bottom: 3rem;
+      }
     }
-    .nav-bar{
-        display:flex;
-        justify-content: space-between;
-        width: 45%;
-
-        li a{
-            font-size: 2rem;
-            text-decoration: none;
-            color: @accentblue;
-            &:hover{
-                color: @white;
-            }
-
+    .mobile-menu {
+      div {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+  .logo {
+    font-family: "Yellowtail", cursive;
+    font-size: 5rem;
+    color: @white;
+    margin: 1rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  .nav-bar-mobile {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    height: 100%;
+    transition: 0.5s;
+    padding: 2rem 0rem;
+    width: 40%;
+    background: @darkerblue;
+    position: fixed;
+    top: 6rem;
+    a {
+      font-size: 2rem;
+      color: @lightgrey;
+      text-decoration: none;
+      padding-left: 3rem;
+    }
+    div {
+      padding: 2rem 0rem;
+      z-index: 0;
+      &:hover {
+        -webkit-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+        -moz-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+        box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+        a {
+          color: white;
         }
+      }
     }
-    .login{
-        padding: 1rem 2rem;
-        background: @darkblue;
-        -webkit-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        -moz-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        color: @white;
-        border-radius: 0.3rem;
-        font-size: 1.8rem;
-        text-decoration: none;
-        &:hover{
-            background: @lightblue;
-            
-        }
+  }
+  .login {
+    padding: 1rem 3.2rem;
+    background: @darkblue;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    box-shadow: 0px 0px 13px 0px rgba(10, 23, 43, 1);
+    color: @white;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    &:hover {
+      background: @lightblue;
     }
-
+  }
 }
-.top-nav-container-mobile{
-    display: none;
+@media (max-width: 500px) {
+  .menu-button {
+    padding: 1rem 1.6rem;
+    font-size: 1.8rem;
+  }
+  .logo {
+    font-size: 4rem;
+  }
+  .login {
+    padding: 1rem 3.2rem;
+    font-size: 1.8rem;
+  }
 }
-.nav-bar-mobile{
-    display: none;
-}
-@media(max-width: 750px){
-    .top-nav-container{
-        display:none;
-
-    }
-        .menu-button{
-        padding: 1rem 2rem;
-        background: @darkblue;
-        -webkit-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        -moz-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        color: @white;
-        border-radius: 0.3rem;
-        font-size: 2rem;
-        text-decoration: none;
-        &:hover{
-            background: @lightblue;
-            cursor: pointer;            
-        }
-    }
-    .top-nav-container-mobile{
-        position: sticky;
-        top: 0;
-        display: flex;
-        z-index: 3;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 0rem 3rem;
-        background-color: @darkblue;
-        .mobile-login{
-            div{
-                padding-bottom: 3rem;
-            }
-        }
-        .mobile-menu{
-            div{
-                padding-bottom: 3rem;
-            }
-        }
-    }
-    .logo{
-        font-family: 'Yellowtail', cursive;
-        font-size: 5rem;
-        color: @white;
-        margin: 1rem 0rem 2rem 0rem;
-        padding: 0rem 0rem 0rem 0rem;
-    }
-    .nav-bar-mobile{
-        display: flex;
-        flex-direction: column;
-        align-content: flex-end;
-        height: 100%;
-        transition: .5s;
-        padding: 2rem 0rem;
-        width: 40%;
-        background: @darkerblue;
-        position: fixed;
-        top: 6rem;
-        a{
-            font-size: 2rem;
-            color: @lightgrey;
-            text-decoration: none;
-            padding-left: 3rem;
-        }
-        div{
-            padding: 2rem 0rem;
-            z-index: 0;
-            &:hover{
-                -webkit-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-                -moz-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-                box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-                a{
-                    color: white;
-                }
-            }
-        }
-    }
-    .login{
-        padding: 1rem 3.2rem;
-        background: @darkblue;
-        -webkit-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        -moz-box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        box-shadow: 0px 0px 13px 0px rgba(10,23,43,1);
-        color: @white;
-        border-radius: 0.3rem;
-        font-size: 2rem;
-        text-decoration: none;
-        &:hover{
-            background: @lightblue;
-            
-        }
-    }
-}
-@media(max-width: 500px){
-        .menu-button{
-        padding: 1rem 1.6rem;
-        font-size: 1.8rem;
-    }
-    .logo{
-        font-size: 4rem;
-    }
-    .login{
-        padding: 1rem 3.2rem;
-        font-size: 1.8rem;
-    }    
-}
-@media(max-width: 400px){
-    .menu-button{
+@media (max-width: 400px) {
+  .menu-button {
     padding: 1rem 1.6rem;
     font-size: 1.4rem;
-}
-.logo{
+  }
+  .logo {
     font-size: 3.5rem;
-}
-.login{
+  }
+  .login {
     padding: 1rem 3.2rem;
     font-size: 1.4rem;
-}    
+  }
 }

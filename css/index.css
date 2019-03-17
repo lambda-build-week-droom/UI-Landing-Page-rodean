@@ -163,7 +163,7 @@ h3 {
   z-index: 2;
 }
 .top-nav-container h2 {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   font-size: 4rem;
   color: #FFFFFF;
 }
@@ -204,6 +204,9 @@ h3 {
   .top-nav-container {
     display: none;
   }
+  .mobile-menu div a {
+    color: white;
+  }
   .menu-button {
     padding: 1rem 2rem;
     background: #1B3B6F;
@@ -236,7 +239,7 @@ h3 {
     padding-bottom: 3rem;
   }
   .logo {
-    font-family: 'Yellowtail', cursive;
+    font-family: "Yellowtail", cursive;
     font-size: 5rem;
     color: #FFFFFF;
     margin: 1rem 0rem 2rem 0rem;
