@@ -1,4 +1,5 @@
-## Site Deployment Link: [Droom UI](https://droom-ui.netlify.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e56dff83-e568-4a41-9485-3c5219c039e4/deploy-status)](https://app.netlify.com/sites/droom1/deploys)
+## Site Deployment Link: [Droom UI](https://droom1.netlify.com/)
 
 The Droom UI was created using HTML LESS CSS and Javascript
 
