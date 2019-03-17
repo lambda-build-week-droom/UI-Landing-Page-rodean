@@ -251,11 +251,11 @@ h3 {
     align-content: flex-end;
     height: 100%;
     transition: 0.5s;
-    padding: 2rem 0rem;
+    padding: 12rem 0rem 2rem 0rem;
     width: 50%;
     background: #112749;
     position: fixed;
-    top: 6rem;
+    top: 0rem;
   }
   .nav-bar-mobile a {
     font-size: 2rem;
