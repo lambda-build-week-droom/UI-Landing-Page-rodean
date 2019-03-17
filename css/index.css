@@ -229,7 +229,7 @@ h3 {
     z-index: 3;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0rem 3rem;
+    padding: 1rem 3rem;
     background-color: #1B3B6F;
   }
   .top-nav-container-mobile .mobile-login div {
@@ -252,7 +252,7 @@ h3 {
     height: 100%;
     transition: 0.5s;
     padding: 2rem 0rem;
-    width: 40%;
+    width: 50%;
     background: #112749;
     position: fixed;
     top: 6rem;
@@ -305,14 +305,14 @@ h3 {
 }
 @media (max-width: 400px) {
   .menu-button {
-    padding: 1rem 1.6rem;
+    padding: 1rem 1rem;
     font-size: 1.4rem;
   }
   .logo {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .login {
-    padding: 1rem 3.2rem;
+    padding: 1rem 2rem;
     font-size: 1.4rem;
   }
 }
