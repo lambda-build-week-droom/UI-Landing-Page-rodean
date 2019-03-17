@@ -1,59 +1,61 @@
-.team{
-    .main-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin-top: 5rem;
-        h1{
-            text-align: center;
-            padding-bottom: 5rem;
-        }
-    }
-}
-.profile-container{
+.team {
+  .main-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: 100%;
-    height: auto;
-    padding: 3rem;
-    .members{ 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;      
-        width:100%;
-        margin-bottom: 5rem;
-        .team-text-container{
-            max-width: 80%;
-            padding-left: 3rem;
-        }
-        .img-holder{
-            max-width: 40%;
-            img{
-                width: 100%;
-                border-radius: 100%;
-            }
-        }
-
-    }    
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    h1 {
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+  }
 }
-@media(max-width: 750px){
-    .main-content{
-        h1{
-            font-size: 5rem;
-        }
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  height: auto;
+  padding: 3rem;
+  .members {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5rem;
+    .team-text-container {
+      max-width: 80%;
+      padding-left: 3rem;
     }
-    .members{
-        flex-direction: column;
-        .team-text-container{
-            max-width: 100%;
-            h2{
-                text-align: center;
-            }
-            p{
-                text-align: center;
-            }
-        }
+    .img-holder {
+      max-width: 40%;
+      img {
+        width: 100%;
+        border-radius: 100%;
+      }
     }
+  }
+}
+@media (max-width: 750px) {
+  .main-content {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  .profile-container {
+    .members {
+      flex-direction: column;
+      .team-text-container {
+        padding-left: 0rem;
+        max-width: 100%;
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
 }

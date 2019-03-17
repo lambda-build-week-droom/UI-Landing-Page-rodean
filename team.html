@@ -1,108 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700|Yellowtail" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css" />
-  <title>Droom</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:700|Yellowtail"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Droom</title>
+  </head>
 
-<body>
-  <div class="site-container">
-    <nav class="top-nav-container">
-      <h2 class="logo" >Droom</h2>
-      <ul class="nav-bar">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/index.html#about">About</a></li>
-        <li><a href="/index.html#features">Features</a></li>
-        <li><a href="/team.html">Our Team</a></li>
-      </ul>
-      <a href="https://keen-hodgkin-2ca05d.netlify.com/" class="login">Log In</a>
-    </nav>
-    <div class="top-nav-container-mobile hidden">
-      <div class="mobile-menu">
-        <div>
-          <a class="menu-button">Menu</a>
-        </div>
-      </div>
-      <h2 class="logo">Droom</h2>
-      <div class="mobile-login">
-        <div>
-          <a href="https://keen-hodgkin-2ca05d.netlify.com/" class="login">Log In</a>
-        </div>
-      </div>
-    </div>
-    <div class="nav-bar-mobile hide-content">
-      <div><a href="/index.html#">Home</a></div>
-      <div><a href="/index.html#about">About</a></div>
-      <div><a href="/index.html#features">Features</a></div>
-      <div><a href="/team.html">Our Team</a></div>
-    </div>
-    <div class="team">
-      <section class="main-content">
-        <h1>Meet The Team</h1>
-        <div class="profile-container">
-          <div class="members">
-            <div class="img-holder">
-              <img src="/img/jeremiah pic.jpg" alt="jeremiah profile pic">
-            </div>
-
-            <div class="team-text-container">
-              <h2>Jeremiah Tenbrink | Front End Developer</h2>
-              <p>Prior to pursuing his passion as a developer.
-                Jeremiah served in the military where he was a Combat Search and rescue swimmer for just about 8 years.
-                Upon Completion of his service he was self taught developer and has recently joined the Lambda School
-                full stack web development program.</p>
-            </div>
-          </div>
-          <div class="members">
-            <div class="img-holder">
-              <img src="/img/rodean pic.jpg" alt="rodean profile pic">
-            </div>
-
-            <div class="team-text-container">
-              <h2>Rodean Fraser | UI Engineer</h2>
-              <p>Before attending Lambda School, Rodean graduated from Florida Atlantic University,
-                with a degree in Accounting and Entrepreneurship. He later went on to start a computer
-                repair business before taking his hobby of web design to the next level with Lambda School
-                where is enrolled in their immersive Full Stack Web Dev Program.</p>
-            </div>
-          </div>
-          <div class="members">
-            <div class="img-holder">
-              <img src="/img/michael pic.jpg" alt="jeremiah profile pic">
-            </div>
-
-            <div class="team-text-container">
-              <h2>Michael Landers | Back End Developer</h2>
-              <p>You can do anything here. So don't worry about it. Everyone wants to enjoy the good parts - but you
-                have to build the framework first. Talk to trees, look at the birds. Whatever it takes. <br> - Bob Ross</p>
-            </div>
-          </div>
-        </div>
-
-
-      </section>
-    </div>
-    <footer class="footer-container">
-      <div class="cta-2">
-        <h2>Find Your Dream Job With</h2>
-        <div class="sign-up"><a href="https://keen-hodgkin-2ca05d.netlify.com/">Sign Up</a></div>
-      </div>
-      <div class="footer-nav-container">
-        <ul class="footer-nav">
+  <body>
+    <div class="site-container">
+      <!-- NAVIGATION CONTAINER -->
+      <nav class="top-nav-container">
+        <h2 class="logo">Droom</h2>
+        <ul class="nav-bar">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/index.html#about">About</a></li>
           <li><a href="/index.html#features">Features</a></li>
-          <li><a href="#">Our Team</a></li>
+          <li><a href="/team.html">Our Team</a></li>
         </ul>
+        <a href="https://keen-hodgkin-2ca05d.netlify.com/" class="login"
+          >Log In</a
+        >
+      </nav>
+      <!-- MOBILE NAV CONTAINER -->
+      <div class="top-nav-container-mobile hidden">
+        <div class="mobile-menu">
+          <div>
+            <a class="menu-button">&#9776;</a>
+          </div>
+        </div>
+        <h2 class="logo">Droom</h2>
+        <div class="mobile-login">
+          <div>
+            <a href="https://keen-hodgkin-2ca05d.netlify.com/" class="login"
+              >Log In</a
+            >
+          </div>
+        </div>
       </div>
+      <!-- HIDDEN MOBILE MENU -->
+      <div class="nav-bar-mobile hide-content">
+        <div><a href="/index.html#">Home</a></div>
+        <div><a href="/index.html#about">About</a></div>
+        <div><a href="/index.html#features">Features</a></div>
+        <div><a href="/team.html">Our Team</a></div>
+      </div>
+      <div class="team">
+        <section class="main-content">
+          <h1>Meet The Team</h1>
+          <div class="profile-container">
+            <div class="members">
+              <div class="img-holder">
+                <img src="/img/jeremiah pic.jpg" alt="jeremiah profile pic" />
+              </div>
 
-    </footer>
-  </div>
-</body>
-<script src="/js/index.js"></script>
+              <div class="team-text-container">
+                <h2>Jeremiah Tenbrink | Front End Developer</h2>
+                <p>
+                  Prior to pursuing his passion as a developer. Jeremiah served
+                  in the military where he was a Combat Search and rescue
+                  swimmer for just about 8 years. Upon Completion of his service
+                  he was self taught developer and has recently joined the
+                  Lambda School full stack web development program.
+                </p>
+              </div>
+            </div>
+            <div class="members">
+              <div class="img-holder">
+                <img src="/img/rodean pic.jpg" alt="rodean profile pic" />
+              </div>
 
+              <div class="team-text-container">
+                <h2>Rodean Fraser | UI Engineer</h2>
+                <p>
+                  Before attending Lambda School, Rodean graduated from Florida
+                  Atlantic University, with a degree in Accounting and
+                  Entrepreneurship. He later went on to start a computer repair
+                  business before taking his hobby of web design to the next
+                  level with Lambda School where is enrolled in their immersive
+                  Full Stack Web Dev Program.
+                </p>
+              </div>
+            </div>
+            <div class="members">
+              <div class="img-holder">
+                <img src="/img/michael pic.jpg" alt="jeremiah profile pic" />
+              </div>
+
+              <div class="team-text-container">
+                <h2>Michael Landers | Back End Developer</h2>
+                <p>
+                  You can do anything here. So don't worry about it. Everyone
+                  wants to enjoy the good parts - but you have to build the
+                  framework first. Talk to trees, look at the birds. Whatever it
+                  takes. <br />
+                  - Bob Ross
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer-container">
+        <div class="cta-2">
+          <h2>Find Your Dream Job With</h2>
+          <div class="sign-up">
+            <a href="https://keen-hodgkin-2ca05d.netlify.com/">Sign Up</a>
+          </div>
+        </div>
+        <div class="footer-nav-container">
+          <ul class="footer-nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#features">Features</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="/js/index.js"></script>
 </html>

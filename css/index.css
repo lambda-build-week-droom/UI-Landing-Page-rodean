@@ -319,7 +319,7 @@ h3 {
 header {
   height: 60rem;
   width: 100%;
-  background-image: url(/img/starry\ night\ sky.jpg);
+  background-image: url(/img/starrynightsky.jpg);
   overflow: hidden;
 }
 .header-container {
@@ -480,7 +480,7 @@ header {
   display: flex;
 }
 .footer-container .footer-nav-container h2 {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   font-size: 4rem;
   color: #404040;
 }
@@ -663,16 +663,17 @@ header {
   .main-content h1 {
     font-size: 5rem;
   }
-  .members {
+  .profile-container .members {
     flex-direction: column;
   }
-  .members .team-text-container {
+  .profile-container .members .team-text-container {
+    padding-left: 0rem;
     max-width: 100%;
   }
-  .members .team-text-container h2 {
+  .profile-container .members .team-text-container h2 {
     text-align: center;
   }
-  .members .team-text-container p {
-    text-align: center;
+  .profile-container .members .team-text-container p {
+    text-align: justify;
   }
 }
